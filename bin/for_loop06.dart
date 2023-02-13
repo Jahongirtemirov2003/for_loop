@@ -1,14 +1,16 @@
 int func(List<int> numbers, int k, int n) {
-/*
-   Given the list of numbers, return the sum of the numbers between k and n in the list
-Args:
-  numbers(List): value
-  int: k
-  int: n
-Return: 
-  Int: answer
-*/
-  return 0;
+int sum = 0;
+for(int num in numbers)
+{
+  if(k<=num && num<=n)
+  {
+    sum = sum + num;
+  }
+}
+  return sum;
 }
 
-void main() {}
+void main() 
+{
+  print(func([6,2,8,1,6,3,7], 2, 4));
+}

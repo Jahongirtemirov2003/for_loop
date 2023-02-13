@@ -1,12 +1,17 @@
 int func(List<int> numbers) {
-/*
-   Given the list of numbers, return sum the odd numbers in the list
-Args:
-  numbers(List): value
-Return: 
-  Int: answer
-*/
-  return 0;
+int sum = 0;
+for(int num in numbers)
+{
+  if(num%2==1)
+  {
+    sum = sum + num;
+  }
+}
+  return sum;
 }
 
-void main() {}
+void main() 
+{
+  print(func([5,3,2,8,5]));
+}
+

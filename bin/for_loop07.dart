@@ -1,14 +1,12 @@
 int func(List<int> numbers, int k, int n) {
-/*
-   Given the list of numbers, return the sum of the even numbers between k and n in the list
-Args:
-  numbers(List): value
-  int: k
-  int: n
-Return: 
-  Int: answer
-*/
-  return 0;
+int sum = 0;
+for(int num in numbers)
+{
+  if(k<=num && num<=n && num%2==0)
+  {
+    sum = sum + num;
+  }
+}
+  return sum;
 }
 
-void main() {}

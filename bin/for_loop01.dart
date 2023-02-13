@@ -1,4 +1,4 @@
-int func(List numbers) {
+
   /*
 Given the list of numbers, return sum of the numbers in the list
 Args:
@@ -6,7 +6,18 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
+
+
+
+int func(List numbers) {
+  int S = 0;
+for (int number in numbers)
+{
+ S = S + number;
+}
+  return S;
 }
 
-void main() {}
+void main() {
+  print(func([1,2,3,4,5]));
+}
